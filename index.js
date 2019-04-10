@@ -25,7 +25,27 @@ const k_muppet = {
   k_partner: 'Miss Piggy'
 };
 
-// Strings
+// 1) String: uses destructuring to declare five animal sounds
+
+const [moo, neigh, baa, oink, cluck] = farmAnimals.split(' ')
+// 2) String: uses destructuring to declare the four traditional animal names
+
+const [Bessie, , Dolly, Babe, Little] = farmAnimals.split(' ')
+// 3) String: uses destructuring to declare the three traditional animal colors
+
+const [black_and_white, , black, pink, ] = farmAnimals.split(' ')
+// 4) Array: uses destructuring to declare the seven traditional rainbow color variables using the color names
+
+const [red, orange, yellow, green, blue, indigo, violet] = colors;
+// 5) Array: uses destructuring to declare six rainbow color variables using initials
+const [r, o, y, g, b, , v ] = colors;
+// 6) Array: uses destructuring to declare Indigo using indg
+const [, , , , ,indg , ] = colors;
+// 7) Object: uses destructuring to assign all appropriate variables using the keys as the variable names
+const {name, color, song, job, partner} = muppet;
+// 8) Object: uses destructuring to assign Kermit's color, songs 2 and 4, and Kermit's job and partner
+const {k_name, k_color, k_job, k_partner} = k_muppet;
+const { song_2, song_4} = k_muppet.k_album.the_muppet_movie
 
 // 1. Use destructuring to assign appropriate variables based on the sounds animals make.
 
